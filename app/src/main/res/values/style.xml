@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><style name="ButtonStyle" parent="@android:style/Widget.Button">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:textColor">#ececec</item>
+    <item name="android:textSize">15sp</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="fontFamily">@font/arial</item>
+    <item name="backgroundTint">@color/red</item>
+
+    <item name="android:gravity">center</item>
+
+</style>
+
+
+    <style name="TextViewStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/arial</item>
+        <item name="android:background">#00FFFFFF</item>
+
+        <item name="android:gravity">center</item>
+
+    </style>
+
+
+</resources>
