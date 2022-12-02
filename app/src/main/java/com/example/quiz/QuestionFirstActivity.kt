@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_question_first.*
 
 class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
-    private var mCurrentPosition: Int = 1 // Default and the first question position
+    private var mCurrentPosition: Int = 1
     private var mQuestionsList: ArrayList<Question>? = null
 
     private var mSelectedOptionPosition: Int = 0
@@ -86,11 +86,10 @@ class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
                             mCorrectAnswers++
                         }
 
-                        // This is for correct answer
                         answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
 
                         if (mCurrentPosition == mQuestionsList!!.size) {
-                            btn_submit.text = "FINISH"
+                            btn_submit.text = "ЗАКОНЧИТЬ"
                         } else {
                             btn_submit.text = "СЛЕДУЮЩИЙ ВОПРОС"
                         }
@@ -102,7 +101,7 @@ class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
         }
         private fun setQuestion() {
 
-            val question = mQuestionsList!!.get(mCurrentPosition - 1) // Getting the question from the list with the help of current position.
+            val question = mQuestionsList!!.get(mCurrentPosition - 1)
 
             defaultOptionsView()
 

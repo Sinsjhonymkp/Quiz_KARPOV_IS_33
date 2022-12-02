@@ -20,21 +20,24 @@ android:gravity="top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Результат"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/iv_trophy"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/iv_trophy"
-        android:layout_width="wrap_content"
-        android:layout_height="479dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="378dp"
+        android:layout_height="415dp"
+        android:layout_marginTop="80dp"
         android:contentDescription="image"
         android:src="@drawable/lavr"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,9 +48,10 @@ android:gravity="top"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Ты закончил викторину!"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/iv_trophy"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="@+id/iv_trophy"
         app:layout_constraintTop_toBottomOf="@+id/iv_trophy" />
 
@@ -56,8 +60,10 @@ android:gravity="top"
         style="@style/TextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_congratulations"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="@+id/tv_congratulations"
         app:layout_constraintTop_toBottomOf="@+id/tv_congratulations"
         tools:text="Твой счет 9 из 10" />
@@ -65,15 +71,16 @@ android:gravity="top"
     <Button
         android:id="@+id/btn_finish"
         style="@style/ButtonStyle"
-        android:layout_width="308dp"
-        android:layout_height="135dp"
+        android:layout_width="282dp"
+        android:layout_height="70dp"
         android:text="выбор викторины"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_score"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

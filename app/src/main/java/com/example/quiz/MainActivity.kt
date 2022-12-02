@@ -21,4 +21,14 @@ class MainActivity : AppCompatActivity() {
         val intent: Intent = Intent(this@MainActivity,QuestionFirstActivity::class.java)
         startActivity(intent)
     }
+
+    fun OnClick3(view: View) {
+        val intent: Intent = Intent(this@MainActivity,QuestionSecondActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun OnClick4(view: View) {
+        val intent: Intent = Intent(this@MainActivity,QuestionThirdActivity::class.java)
+        startActivity(intent)
+    }
 }

@@ -16,25 +16,23 @@
 
 
         <TextView
-            style="@style/TextViewStyle"
             android:id="@+id/tv_question"
+            android:layout_gravity="right"
+            style="@style/TextViewStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:textSize="22sp"
-            tools:text="флаг какой страны изображён ниже" />
+            android:textSize="35sp"
+            tools:text="Вопрос" />
 
-        <ImageView
-            android:id="@+id/iv_image"
-            android:layout_width="wrap_content"
-            android:layout_height="202dp"
-            android:layout_marginTop="16dp"
-            android:contentDescription="image"
-            android:scaleType="centerCrop"
-            tools:src="@drawable/russia">
-
-        </ImageView>
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TextViewStyle"
+            android:layout_width="381dp"
+            android:layout_height="165dp"
+            android:text="вопрос"
+            android:textSize="30sp" />
 
         <LinearLayout
             android:id="@+id/ll_progress_details"
@@ -130,8 +128,8 @@
             tools:text="-" />
 
         <Button
-            android:id="@+id/btn_submit"
             style="@style/ButtonStyle"
+            android:id="@+id/btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
