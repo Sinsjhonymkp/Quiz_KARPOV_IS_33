@@ -22,10 +22,8 @@ import kotlinx.android.synthetic.main.activity_question_second.*
 class QuestionSecondActivity : AppCompatActivity(), View.OnClickListener  {
     private var mCurrentPosition: Int = 1
     private var mQuestionsList: ArrayList<Question2>? = null
-
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
-    private var mUserName: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_second)
@@ -81,40 +79,32 @@ class QuestionSecondActivity : AppCompatActivity(), View.OnClickListener  {
                             intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
                             startActivity(intent)
                             finish()
-                            // END
+
                         }
                     }
                 } else {
                     val question2 = mQuestionsList?.get(mCurrentPosition - 1)
 
-                    // This is to check if the answer is wrong
                     if (question2!!.correctAnswer2 != mSelectedOptionPosition) {
                         answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
                     }
                     else {
                         mCorrectAnswers++
                     }
-
-                    // This is for correct answer
                     answerView(question2.correctAnswer2, R.drawable.correct_option_border_bg)
-
                     if (mCurrentPosition == mQuestionsList!!.size) {
                         btn_submit.text = "ЗАКОНЧИТЬ"
                     } else {
                         btn_submit.text = "СЛЕДУЮЩИЙ ВОПРОС"
                     }
-
                     mSelectedOptionPosition = 0
                 }
             }
         }
     }
     private fun setQuestion() {
-
-        val question2 = mQuestionsList!!.get(mCurrentPosition - 1) // Getting the question from the list with the help of current position.
-
+        val question2 = mQuestionsList!!.get(mCurrentPosition - 1)
         defaultOptionsView()
-
         if (mCurrentPosition == mQuestionsList!!.size) {
             btn_submit.text = "ЗАКОНЧИТЬ"
         } else {

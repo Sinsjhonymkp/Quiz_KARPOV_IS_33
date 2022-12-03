@@ -31,6 +31,8 @@
             style="@style/TextViewStyle"
             android:layout_width="381dp"
             android:layout_height="165dp"
+            android:background="#A6B6B6B6"
+            android:shape="rectangle"
             android:text="вопрос"
             android:textSize="30sp" />
 

@@ -1,8 +1,8 @@
 package com.example.quiz
 
 object  Constants2 {
-    const val TOTAL_QUESTIONS: String = "total_questions"
-    const val CORRECT_ANSWERS: String = "correct_answers"
+    const val TOTAL_QUESTIONS2: String = "total_questions2"
+    const val CORRECT_ANSWERS2: String = "correct_answers2"
 
     fun getQuestions2(): ArrayList<Question2> {
         val questionsList = ArrayList<Question2>()
@@ -78,7 +78,7 @@ object  Constants2 {
             8, "Насекомые",
             "Бражники - это?",
             "Пауки", "Бабочки",
-            "Гусеници", "Стрекозы", 2
+            "Гусеницы", "Стрекозы", 2
         )
 
         questionsList.add(que8)
@@ -86,7 +86,7 @@ object  Constants2 {
         // 9
         val que9 = Question2(
             9, "Паразиты",
-            "Промежуточный хозяин печеночного сосальщика",
+            "Промежуточный хозяин печёночного сосальщика",
             "Малый прудовик", "Корова",
             "Человек", "Кошка", 1
         )
@@ -96,7 +96,7 @@ object  Constants2 {
         // 10
         val que10 = Question2(
             10, "Животные",
-           "Какое животное имеют не семетричное тело?",
+           "Какое животное имеют не симметричные тело?",
             "Морская звезда", "Мидии",
             "Брюхоногий моллюск", "Двухстворчатые моллюски", 3
         )

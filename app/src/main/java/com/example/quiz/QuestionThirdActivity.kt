@@ -26,7 +26,6 @@ class QuestionThirdActivity : AppCompatActivity(), View.OnClickListener  {
 
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
-    private var mUserName: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_third)
@@ -82,7 +81,7 @@ class QuestionThirdActivity : AppCompatActivity(), View.OnClickListener  {
                             intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
                             startActivity(intent)
                             finish()
-                            // END
+
                         }
                     }
                 } else {
@@ -96,7 +95,7 @@ class QuestionThirdActivity : AppCompatActivity(), View.OnClickListener  {
                         mCorrectAnswers++
                     }
 
-                    // This is for correct answer
+
                     answerView(question2.correctAnswer3, R.drawable.correct_option_border_bg)
 
                     if (mCurrentPosition == mQuestionsList!!.size) {
@@ -112,7 +111,7 @@ class QuestionThirdActivity : AppCompatActivity(), View.OnClickListener  {
     }
     private fun setQuestion() {
 
-        val question2 = mQuestionsList!!.get(mCurrentPosition - 1) // Getting the question from the list with the help of current position.
+        val question2 = mQuestionsList!!.get(mCurrentPosition - 1)
 
         defaultOptionsView()
 

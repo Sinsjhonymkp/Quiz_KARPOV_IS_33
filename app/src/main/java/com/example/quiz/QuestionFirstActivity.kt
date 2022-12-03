@@ -16,7 +16,6 @@ class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
 
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
-    private var mUserName: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_first)
@@ -60,9 +59,7 @@ class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
                         mCurrentPosition++
 
                         when {
-
                             mCurrentPosition <= mQuestionsList!!.size -> {
-
                                 setQuestion()
                             }
                             else -> {
@@ -72,13 +69,14 @@ class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
                                 intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
                                 startActivity(intent)
                                 finish()
-                                // END
+
                             }
+
+
                         }
                     } else {
                         val question = mQuestionsList?.get(mCurrentPosition - 1)
 
-                        // This is to check if the answer is wrong
                         if (question!!.correctAnswer != mSelectedOptionPosition) {
                             answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
                         }

@@ -28,27 +28,27 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/lodger"
-        android:text="тема викторины"
+        android:text="Тема викторины"
         android:textSize="25dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.019" />
 
     <ImageButton
         android:id="@+id/bioButton"
-        android:onClick="OnClick3"
         android:layout_width="207dp"
         android:layout_height="193dp"
         android:layout_marginEnd="4dp"
         android:contentDescription="@string/app_name"
+        android:onClick="OnClick3"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302"
+        app:layout_constraintVertical_bias="0.203"
         app:srcCompat="@drawable/bio" />
 
     <ImageButton
@@ -66,10 +66,11 @@
         app:srcCompat="@drawable/geo1" />
 
     <ImageButton
-        android:onClick="OnClick4"
         android:id="@+id/imageButton3"
         android:layout_width="207dp"
         android:layout_height="193dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="OnClick4"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,13 +99,14 @@
         style="@style/TextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
         android:layout_marginBottom="4dp"
         android:text="БИОЛОГИЯ"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/bioButton"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="@+id/bioButton"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0" />
@@ -124,33 +126,30 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.936" />
 
-    <Button
-        android:id="@+id/button4"
-        style="@style/ButtonStyle"
-        android:layout_width="234dp"
-        android:layout_height="72dp"
-        android:text="Результаты"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:layout_constraintVertical_bias="0.213" />
-
     <ImageButton
         android:id="@+id/AboutProgramButton"
         android:layout_width="84dp"
         android:layout_height="65dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
         android:contentDescription="@string/app_name"
         android:onClick="Onclick"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/statView2"
         app:srcCompat="@drawable/aboutprogram" />
+
+    <TextView
+        android:id="@+id/statView2"
+        style="@style/TextViewStyle"
+        android:layout_width="399dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="48dp"
+        android:text="Результат"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/AboutProgramButton"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

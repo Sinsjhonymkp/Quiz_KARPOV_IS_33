@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A60C00"
-    android:backgroundTint="#FFFFFF"
+    android:background="@drawable/backgrounload"
+
     android:fontFamily="@font/lodger"
+
     tools:context=".SplashScreenActivity">
 
     <ImageView

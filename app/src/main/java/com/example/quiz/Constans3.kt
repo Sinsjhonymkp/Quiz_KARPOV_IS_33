@@ -1,8 +1,8 @@
 package com.example.quiz
 
 object  Constants3 {
-    const val TOTAL_QUESTIONS: String = "total_questions"
-    const val CORRECT_ANSWERS: String = "correct_answers"
+    const val TOTAL_QUESTIONS3: String = "total_questions3"
+    const val CORRECT_ANSWERS3: String = "correct_answers3"
 
     fun getQuestions2(): ArrayList<Question3> {
         val questionsList = ArrayList<Question3>()
@@ -26,7 +26,7 @@ object  Constants3 {
 
         val que3 = Question3(
             3, "Математика",
-            "утверждение принимаемое без док-ва",
+            "утверждение\n принимаемое без док-ва",
             "Биссектриса", "Угол",
             "Аксиома", "Теорема", 3
         )
@@ -56,7 +56,7 @@ object  Constants3 {
         // 6
         val que6 = Question3(
             6, "Математика",
-            "Сколько диагоналей можно провести в треугольнике",
+            "Сколько диагоналей\n можно провести в треугольнике",
             "1", "2",
             "4", "0", 4
         )
@@ -66,7 +66,7 @@ object  Constants3 {
         // 7
         val que7 = Question3(
             7, "Математика",
-            "Какое число делится на все цисла без остатка",
+            "Какое число\nделится на все цисла без остатка",
             "3", "2",
             "0", "10", 3
         )
@@ -76,7 +76,7 @@ object  Constants3 {
         // 8
         val que8 = Question3(
             8, "Математика",
-            "сколько ступенек у лестницы в которой средняя ступенька 8",
+            "сколько ступенек\n у \nлестницы в которой \nсредняя ступенька 8",
             "11", "16",
             "17", "15", 4
         )
@@ -86,8 +86,8 @@ object  Constants3 {
         // 9
         val que9 = Question3(
             9, "Математика",
-            "сколько диагоналей можно провести в четырехугольнике",
-            "Малый 3", "2",
+            "сколько диагоналей можно\n провести в четырехугольнике",
+            "3", "2",
             "4", "6", 2
         )
 
@@ -98,7 +98,7 @@ object  Constants3 {
             10, "Математика",
             "сколько вершин у куба",
             "6", "10",
-            "Брюхоногий 4", "8 ", 4
+            "4", "8 ", 4
         )
 
         questionsList.add(que10)
