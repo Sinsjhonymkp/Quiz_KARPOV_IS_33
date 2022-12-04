@@ -10,7 +10,7 @@
     android:background="@drawable/photo_2022_12_01_20_41_25"
     android:orientation="vertical"
 
-android:gravity="top"
+    android:gravity="top"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -28,59 +28,57 @@ android:gravity="top"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_score"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <TextView
         android:id="@+id/tv_congratulations"
         style="@style/TextViewStyle"
-        android:layout_width="369dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="8dp"
-        android:text="Ты закончил викторину!\n по географии"
+        android:layout_width="366dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        android:text="Ты закончил викторину!\n по математике"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/mark1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/mark1"
-        app:layout_constraintTop_toBottomOf="@+id/mark1" />
-
-    <ImageView
-        android:id="@+id/mark1"
-        android:layout_width="388dp"
-        android:layout_height="276dp"
-        android:layout_marginTop="120dp"
-        android:contentDescription="image"
-        android:scaleType="fitXY"
-        android:src="@drawable/lavr"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/mark4" />
 
     <TextView
         android:id="@+id/tv_result"
         style="@style/TextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Результат"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/mark1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_score"
         style="@style/TextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_congratulations"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/tv_congratulations"
         app:layout_constraintTop_toBottomOf="@+id/tv_congratulations"
         tools:text="Твой счет 9 из 10" />
+
+    <ImageView
+        android:id="@+id/mark4"
+        android:layout_width="395dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result"
+        app:srcCompat="@drawable/lavr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

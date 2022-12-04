@@ -76,9 +76,9 @@ class QuestionThirdActivity : AppCompatActivity(), View.OnClickListener  {
                         }
                         else -> {
                             val intent =
-                                Intent(this@QuestionThirdActivity, ResultActivity::class.java)
-                            intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
-                            intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
+                                Intent(this@QuestionThirdActivity, ResultActivity3::class.java)
+                            intent.putExtra(Constants3.CORRECT_ANSWERS3, mCorrectAnswers)
+                            intent.putExtra(Constants3.TOTAL_QUESTIONS3, mQuestionsList!!.size)
                             startActivity(intent)
                             finish()
 
