@@ -42,6 +42,7 @@
         android:layout_width="207dp"
         android:layout_height="193dp"
         android:layout_marginEnd="4dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/app_name"
         android:onClick="OnClick3"
         android:scaleType="fitXY"
@@ -55,6 +56,7 @@
         android:id="@+id/geoButton"
         android:layout_width="207dp"
         android:layout_height="193dp"
+        android:backgroundTint="#007E7272"
         android:contentDescription="@string/app_name"
         android:onClick="Onclick2"
         android:scaleType="centerCrop"
@@ -69,6 +71,7 @@
         android:id="@+id/imageButton3"
         android:layout_width="207dp"
         android:layout_height="193dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/app_name"
         android:onClick="OnClick4"
         android:scaleType="fitXY"
@@ -126,31 +129,46 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.936" />
 
-    <ImageButton
-        android:id="@+id/AboutProgramButton"
-        android:layout_width="84dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        android:contentDescription="@string/app_name"
-        android:onClick="Onclick"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/statView2"
-        app:srcCompat="@drawable/aboutprogram" />
-
     <TextView
         android:id="@+id/statView2"
         style="@style/TextViewStyle"
-        android:layout_width="274dp"
-        android:layout_height="88dp"
+        android:layout_width="399dp"
+        android:layout_height="116dp"
         android:text="Результат:"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
         app:layout_constraintVertical_bias="0.051" />
+
+    <ImageView
+        android:id="@+id/aboutprogramm"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/about_program"
+        android:onClick="Onclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statView2"
+        app:srcCompat="@drawable/aboutprogram" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextViewStyle"
+        android:layout_width="235dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:text="О программе:"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/aboutprogramm"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

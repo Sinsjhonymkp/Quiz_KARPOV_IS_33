@@ -20,17 +20,17 @@ class MainActivity : AppCompatActivity() {
         //val arguments: Bundle? = intent.extras
        // if (arguments != null) {
            // val name: String = arguments.get("stat").toString()
-            statView2.text = " ваш результат в разделе география\n$name/10"
+            statView2.text = " Ваш результат в разделе география:\n$name/10"
        else {
 
         }
         val name2 = intent.getStringExtra("stat2")
         if (name2 != null)
-        statView2.text = " ваш результат в разделе биология\n$name2/10"
+        statView2.text = " Ваш результат в разделе биология:\n$name2/10"
         else{}
         val name3 = intent.getStringExtra("stat3")
         if(name3 != null)
-        statView2.text = " ваш результат в разделе математика\n" +
+        statView2.text = " Ваш результат в разделе математика:\n" +
                 "$name3/10"
         else{
 

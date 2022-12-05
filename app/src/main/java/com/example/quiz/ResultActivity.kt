@@ -23,7 +23,7 @@ class ResultActivity : AppCompatActivity() {
             mark1.setImageResource(R.drawable.normmarkg)
         }
         if(correctAnswers in  8..10){
-            mark1.setImageResource(R.drawable.wonderfulmark)
+            mark1.setImageResource(R.drawable.wonderfulmarkg)
         }
 
 
