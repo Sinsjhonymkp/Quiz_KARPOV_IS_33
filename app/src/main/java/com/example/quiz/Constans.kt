@@ -11,7 +11,7 @@ const val CORRECT_ANSWERS: String = "correct_answers"
 fun getQuestions(): ArrayList<Question> {
     val questionsList = ArrayList<Question>()
     val que1 = Question(
-        1, "флаг какой страны изображён ниже?",
+        1, "Флаг какой страны изображён ниже?",
         R.drawable.belarus,
         "Беларусь", "Англия",
         "Словакия", "Чехия", 1
@@ -19,7 +19,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que1)
 
     val que2 = Question(
-        2, "флаг какой страны изображён ниже?",
+        2, "Флаг какой страны изображён ниже?",
         R.drawable.chech,
         "Румыния", "Ангола",
         "Чехия", "Узбекистан", 3
@@ -29,7 +29,7 @@ fun getQuestions(): ArrayList<Question> {
 
 
     val que3 = Question(
-        3, "флаг какой страны изображён ниже?",
+        3, "Флаг какой страны изображён ниже?",
         R.drawable.russia,
         "Америка", "Англия",
         "Дания", "Россия", 4
@@ -38,7 +38,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que3)
 
     val que4 = Question(
-        4, "флаг какой страны изображён ниже?",
+        4, "Флаг какой страны изображён ниже?",
         R.drawable.spain,
         "Нигерия", "Испания",
         "Франция", "Тунис", 2
@@ -47,7 +47,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que4)
 
     val que5 = Question(
-        5, "флаг какой страны изображён ниже?",
+        5, "Флаг какой страны изображён ниже?",
         R.drawable.france,
         "Италия", "Португалия",
         "Франция", "Исландия", 3
@@ -56,7 +56,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que5)
 
     val que6 = Question(
-        6, "флаг какой страны изображён ниже",
+        6, "Флаг какой страны изображён ниже",
         R.drawable.german,
         "Германия", "Сербия",
         "Новая-Гвинея", "Эфиопия", 1
@@ -65,7 +65,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que6)
 
     val que7 = Question(
-        7, "флаг какой страны изображён ниже?",
+        7, "Флаг какой страны изображён ниже?",
         R.drawable.china,
         "Япония", "Корея",
         "Китай", "Эритрея", 3
@@ -74,7 +74,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que7)
 
     val que8 = Question(
-        8, "флаг какой страны изображён ниже?",
+        8, "Флаг какой страны изображён ниже?",
         R.drawable.kazakhstan,
         "Турция", "Иран",
         "Уэльс", "Казахстан", 4
@@ -83,7 +83,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que8)
 
     val que9 = Question(
-        9, "флаг какой страны изображён ниже",
+        9, "Флаг какой страны изображён ниже",
         R.drawable.georgia,
         "Австралия", "Грузия",
         "Гваделупа", "Америка", 2
@@ -92,7 +92,7 @@ fun getQuestions(): ArrayList<Question> {
     questionsList.add(que9)
 
     val que10 = Question(
-        10, "флаг какой страны изображён ниже?",
+        10, "Флаг какой страны изображён ниже?",
         R.drawable.mexico,
         "Мексика", "Грузия",
         "Судан", "Финляндия", 1

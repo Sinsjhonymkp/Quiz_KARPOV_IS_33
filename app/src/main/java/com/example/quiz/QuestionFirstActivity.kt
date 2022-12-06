@@ -128,7 +128,7 @@ class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
             mSelectedOptionPosition = selectedOptionNum
 
             tv.setTextColor(
-                Color.parseColor("#363A43")
+                Color.parseColor("#ffff99")
             )
             tv.setTypeface(tv.typeface, Typeface.BOLD)
             tv.background = ContextCompat.getDrawable(
