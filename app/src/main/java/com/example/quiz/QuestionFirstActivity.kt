@@ -99,6 +99,7 @@ class QuestionFirstActivity : AppCompatActivity(), View.OnClickListener  {
         }
         private fun setQuestion() {
 
+
             val question = mQuestionsList!!.get(mCurrentPosition - 1)
 
             defaultOptionsView()

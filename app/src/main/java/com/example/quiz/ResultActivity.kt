@@ -17,13 +17,13 @@ class ResultActivity : AppCompatActivity() {
         val ans = correctAnswers.toString()
 
         if(correctAnswers <=5 ){
-           mark1.setImageResource(R.drawable.badmarkg)
+           mark1.setImageResource(R.drawable.bad1)
         }
         if(correctAnswers in  5..8){
-            mark1.setImageResource(R.drawable.normmarkg)
+            mark1.setImageResource(R.drawable.norm)
         }
         if(correctAnswers in  8..10){
-            mark1.setImageResource(R.drawable.wonderfulmarkg)
+            mark1.setImageResource(R.drawable.great)
         }
 
 

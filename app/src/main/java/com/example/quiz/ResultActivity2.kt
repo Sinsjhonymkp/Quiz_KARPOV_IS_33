@@ -20,13 +20,13 @@ class ResultActivity2 : AppCompatActivity() {
         val ans = correctAnswers2.toString()
 
         if(correctAnswers2 <= 3 ) {
-            mark2.setImageResource(R.drawable.badmarkb)
+            mark2.setImageResource(R.drawable.bad1)
         }
         if(correctAnswers2 in 4..7){
-            mark2.setImageResource(R.drawable.normmarkb)
+            mark2.setImageResource(R.drawable.norm)
         }
         if(correctAnswers2 in 7..10) {
-            mark2.setImageResource(R.drawable.wonderfulmarkb)
+            mark2.setImageResource(R.drawable.great)
         }
 
         tv_score.text = "Твой счет $correctAnswers2 из $totalQuestions."

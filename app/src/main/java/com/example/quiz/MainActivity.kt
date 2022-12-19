@@ -32,9 +32,13 @@ class MainActivity : AppCompatActivity() {
         if(name3 != null)
         statView2.text = " Ваш результат в разделе математика:\n" +
                 "$name3/10"
-        else{
+        else{ }
+        val name4 = intent.getStringExtra("stat4")
+        if(name4 != null)
+            statView2.text = " Ваш результат в разделе история:\n" +
+                    "$name4/10"
+        else{ }
 
-        }
 
 
 
@@ -76,6 +80,10 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent(this@MainActivity, QuestionThirdActivity::class.java)
             startActivity(intent)
         }
+    fun onClick5 (view: View){
+        val intent: Intent = Intent (this@MainActivity,historyQuestionActivity::class.java)
+        startActivity(intent)
+    }
              }
 
 

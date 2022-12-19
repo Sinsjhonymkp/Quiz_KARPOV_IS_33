@@ -3,25 +3,25 @@ package com.example.quiz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_result.btn_finish4
-import kotlinx.android.synthetic.main.activity_result.tv_score
+import kotlinx.android.synthetic.main.activity_result.*
 import kotlinx.android.synthetic.main.activity_result3.*
+import kotlinx.android.synthetic.main.activity_result3.btn_finish4
+import kotlinx.android.synthetic.main.activity_result3.tv_score
 
-class ResultActivity3 : AppCompatActivity() {
+class ResultActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result3)
-        setTitle("Финал викторины по математике")
-        //  window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        val totalQuestions = intent.getIntExtra(Constants3.TOTAL_QUESTIONS3, 0)
-        val correctAnswers3 = intent.getIntExtra(Constants3.CORRECT_ANSWERS3, 0)
+        setContentView(R.layout.activity_result4)
+        setTitle("Финал викторины по истории")
+        val totalQuestions = intent.getIntExtra(Constants4.TOTAL_QUESTIONS4, 0)
+        val correctAnswers3 = intent.getIntExtra(Constants4.CORRECT_ANSWERS4, 0)
         val ans = correctAnswers3.toString()
 
         if(correctAnswers3 <= 3 ) {
             mark4.setImageResource(R.drawable.bad1)
         }
         if(correctAnswers3 in 4..7){
-            mark4.setImageResource(R.drawable.norm)
+            mark4.setImageResource(R.drawable.normmark)
         }
         if(correctAnswers3 in 7..10) {
             mark4.setImageResource(R.drawable.great)
@@ -37,13 +37,13 @@ class ResultActivity3 : AppCompatActivity() {
 
 
 
-            intent = Intent(this@ResultActivity3, MainActivity::class.java)
-            intent.putExtra("stat3", ans)
+            intent = Intent(this@ResultActivity4, MainActivity::class.java)
+            intent.putExtra("stat4", ans)
             startActivity(intent)
             finish()
         }
 
-
     }
-}
 
+
+}
